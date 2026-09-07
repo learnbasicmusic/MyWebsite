@@ -1,0 +1,2302 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Opendra Budha Magar | Lok Dohori Musician</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+
+/* =========================
+   GENERAL
+========================= */
+
+:root {
+    --primary: #d97706;
+    --secondary: #f59e0b;
+    --dark: #1f2937;
+    --light: #fffaf3;
+    --gray: #6b7280;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #374151;
+    line-height: 1.7;
+}
+
+section {
+    padding: 90px 0;
+}
+
+.section-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--dark);
+}
+
+.section-subtitle {
+    color: var(--gray);
+    max-width: 650px;
+    margin: auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: var(--primary) !important;
+    font-size: 22px;
+}
+
+.nav-link {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-main {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: #b45309;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.btn-outline-main {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 11px 26px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-outline-main:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff7ed,
+        #ffffff
+    );
+}
+
+.hero-badge {
+    display: inline-block;
+
+    background: #fef3c7;
+
+    color: #92400e;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 58px;
+
+    font-weight: 800;
+
+    color: var(--dark);
+}
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+.hero-text {
+    font-size: 18px;
+
+    max-width: 650px;
+}
+
+.profile-card {
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+    0 20px 50px
+    rgba(0,0,0,0.08);
+}
+
+.profile-icon {
+
+    width: 150px;
+
+    height: 150px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f59e0b,
+        #d97706
+    );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 65px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+
+    background: var(--dark);
+
+    color: white;
+
+    padding: 50px 0;
+}
+
+.stat-item {
+
+    text-align: center;
+}
+
+.stat-item h2 {
+
+    font-weight: 800;
+
+    color: #fbbf24;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+
+    background: var(--light);
+}
+
+.about-card {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    height: 100%;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.service-card {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    height: 100%;
+
+    box-shadow:
+    0 10px 30px
+    rgba(0,0,0,0.06);
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+
+    transform:
+    translateY(-8px);
+
+    box-shadow:
+    0 20px 40px
+    rgba(0,0,0,0.10);
+}
+
+.service-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    background: #fef3c7;
+
+    color: var(--primary);
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+/* =========================
+   INSTRUMENTS
+========================= */
+
+.instrument {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+    0 10px 25px
+    rgba(0,0,0,0.06);
+
+    transition: 0.3s;
+}
+
+.instrument:hover {
+
+    transform:
+    translateY(-8px);
+}
+
+.instrument i {
+
+    font-size: 45px;
+
+    color: var(--primary);
+}
+
+/* =========================
+   WHY ME
+========================= */
+
+.feature-box {
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background: #fff7ed;
+
+    margin-bottom: 20px;
+}
+
+.feature-box i {
+
+    color: var(--primary);
+
+    font-size: 25px;
+
+    margin-right: 10px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #d97706,
+        #f59e0b
+    );
+
+    color: white;
+
+    border-radius: 30px;
+
+    padding: 70px 40px;
+
+    text-align: center;
+}
+
+.cta h2 {
+
+    font-size: 40px;
+
+    font-weight: 800;
+}
+
+.cta .btn {
+
+    background: white;
+
+    color: var(--primary);
+
+    padding: 13px 28px;
+
+    font-weight: 700;
+
+    border-radius: 8px;
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.step {
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+.step-number {
+
+    width: 60px;
+
+    height: 60px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 800;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+/* =========================
+   TESTIMONIAL
+========================= */
+
+.testimonial {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+    0 10px 30px
+    rgba(0,0,0,0.06);
+
+    height: 100%;
+}
+
+.stars {
+
+    color: #f59e0b;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.accordion-button {
+
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+
+    background: #fff7ed;
+
+    color: var(--primary);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+
+    background: var(--dark);
+
+    color: white;
+}
+
+.contact-box {
+
+    background:
+    rgba(255,255,255,0.08);
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+}
+
+.contact-box i {
+
+    color: #fbbf24;
+
+    font-size: 25px;
+}
+
+.contact a {
+
+    color: white;
+
+    text-decoration: none;
+}
+
+.contact a:hover {
+
+    color: #fbbf24;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background: #111827;
+
+    color: #9ca3af;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+#backToTop {
+
+    position: fixed;
+
+    bottom: 25px;
+
+    right: 25px;
+
+    display: none;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    color: white;
+
+    font-size: 20px;
+
+    z-index: 999;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px) {
+
+    .hero {
+
+        text-align: center;
+    }
+
+    .hero h1 {
+
+        font-size: 40px;
+    }
+
+    .section-title {
+
+        font-size: 30px;
+    }
+
+    .cta h2 {
+
+        font-size: 30px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+
+<div class="container">
+
+<a class="navbar-brand" href="#home">
+
+<i class="bi bi-music-note-beamed"></i>
+
+Opendra Magar
+
+</a>
+
+
+<button
+
+class="navbar-toggler"
+
+type="button"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+
+<a class="nav-link" href="#home">
+
+Home
+
+</a>
+
+</li>
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="#about">
+
+About
+
+</a>
+
+</li>
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="#services">
+
+Services
+
+</a>
+
+</li>
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="#instruments">
+
+Instruments
+
+</a>
+
+</li>
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="#contact">
+
+Contact
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="row align-items-center g-5">
+
+
+<div class="col-lg-7">
+
+<span class="hero-badge">
+
+🇳🇵 Lok Dohori Musician From Nepal
+
+</span>
+
+
+<h1 class="mt-4">
+
+Learn Music.
+
+<br>
+
+Build Your
+
+<span>
+
+Career.
+
+</span>
+
+</h1>
+
+
+<h4>
+
+Hello, I'm Opendra Budha Magar
+
+</h4>
+
+
+<p class="hero-text mt-4">
+
+I help aspiring musicians learn traditional Nepali musical instruments
+and build successful careers in Lok Dohori music.
+
+</p>
+
+
+<p class="hero-text">
+
+Learn practical music skills, improve your performance,
+and get guidance for your music career.
+
+</p>
+
+
+<div class="mt-4">
+
+<a
+
+href="#services"
+
+class="btn btn-main me-2">
+
+<i class="bi bi-music-note-list"></i>
+
+Explore Classes
+
+</a>
+
+
+<a
+
+href="#contact"
+
+class="btn btn-outline-main">
+
+<i class="bi bi-chat-dots"></i>
+
+Contact Me
+
+</a>
+
+</div>
+
+
+</div>
+
+
+
+<div class="col-lg-5">
+
+<div class="profile-card">
+
+<div class="profile-icon">
+
+<i class="bi bi-person-fill"></i>
+
+</div>
+
+
+<h3 class="mt-4">
+
+Opendra Budha Magar
+
+</h3>
+
+
+<p class="text-muted">
+
+🎵 Lok Dohori Musician
+
+</p>
+
+
+<hr>
+
+
+<p>
+
+🇳🇵 Nepal
+
+</p>
+
+
+<a
+
+href="#contact"
+
+class="btn btn-main">
+
+Start Learning Today
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+<div class="container">
+
+<div class="row">
+
+
+<div class="col-md-3 col-6 stat-item">
+
+<h2>
+
+6+
+
+</h2>
+
+<p>
+
+Musical Instruments
+
+</p>
+
+</div>
+
+
+<div class="col-md-3 col-6 stat-item">
+
+<h2>
+
+Online
+
+</h2>
+
+<p>
+
+Music Classes
+
+</p>
+
+</div>
+
+
+<div class="col-md-3 col-6 stat-item">
+
+<h2>
+
+100%
+
+</h2>
+
+<p>
+
+Practical Learning
+
+</p>
+
+</div>
+
+
+<div class="col-md-3 col-6 stat-item">
+
+<h2>
+
+🇳🇵
+
+</h2>
+
+<p>
+
+Nepali Music
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+About Me
+
+</h2>
+
+
+<p class="section-subtitle">
+
+Passionate about Lok Dohori music and helping future musicians.
+
+</p>
+
+</div>
+
+
+<div class="row g-4">
+
+
+<div class="col-lg-6">
+
+<div class="about-card">
+
+<h3>
+
+🎵 My Mission
+
+</h3>
+
+
+<p>
+
+My mission is to help aspiring musicians learn,
+practice and develop their musical skills.
+
+</p>
+
+
+<p>
+
+I believe music learning should be simple,
+practical and enjoyable.
+
+</p>
+
+
+</div>
+
+</div>
+
+
+
+<div class="col-lg-6">
+
+<div class="about-card">
+
+<h3>
+
+🎯 My Goal
+
+</h3>
+
+
+<p>
+
+I want to support musicians in building confidence,
+improving performance and creating successful careers.
+
+</p>
+
+
+<p>
+
+From learning instruments to career guidance,
+I am here to support your journey.
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+<div class="container">
+
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+What I Offer
+
+</h2>
+
+
+<p class="section-subtitle">
+
+Everything you need to start and grow your musical journey.
+
+</p>
+
+</div>
+
+
+<div class="row g-4">
+
+
+<div class="col-lg-4">
+
+<div class="service-card">
+
+<div class="service-icon">
+
+<i class="bi bi-camera-video"></i>
+
+</div>
+
+
+<h3>
+
+Online Music Class
+
+</h3>
+
+
+<p>
+
+Learn musical instruments through practical
+online classes from anywhere.
+
+</p>
+
+
+<ul>
+
+<li>Easy learning method</li>
+
+<li>Practical lessons</li>
+
+<li>Personal guidance</li>
+
+<li>Performance tips</li>
+
+</ul>
+
+
+<a href="#contact"
+
+class="btn btn-main">
+
+Join Class
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="col-lg-4">
+
+<div class="service-card">
+
+<div class="service-icon">
+
+<i class="bi bi-person-workspace"></i>
+
+</div>
+
+
+<h3>
+
+Music Career Guidance
+
+</h3>
+
+
+<p>
+
+Get guidance to build your professional
+career as a musician.
+
+</p>
+
+
+<ul>
+
+<li>Career planning</li>
+
+<li>Performance improvement</li>
+
+<li>Music opportunities</li>
+
+<li>Professional guidance</li>
+
+</ul>
+
+
+<a href="#contact"
+
+class="btn btn-main">
+
+Get Guidance
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="col-lg-4">
+
+<div class="service-card">
+
+<div class="service-icon">
+
+<i class="bi bi-laptop"></i>
+
+</div>
+
+
+<h3>
+
+Tech Consultation
+
+</h3>
+
+
+<p>
+
+Learn how technology can help you
+grow your music career.
+
+</p>
+
+
+<ul>
+
+<li>Digital tools</li>
+
+<li>Online presence</li>
+
+<li>Increase revenue</li>
+
+<li>Music promotion</li>
+
+</ul>
+
+
+<a href="#contact"
+
+class="btn btn-main">
+
+Consult Me
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= INSTRUMENTS ================= -->
+
+<section
+
+id="instruments"
+
+class="about">
+
+
+<div class="container">
+
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Learn Musical Instruments
+
+</h2>
+
+
+<p class="section-subtitle">
+
+Choose your favorite instrument and start learning.
+
+</p>
+
+</div>
+
+
+<div class="row g-4">
+
+
+<div class="col-lg-2 col-md-4 col-6">
+
+<div class="instrument">
+
+<i class="bi bi-music-note"></i>
+
+<h5 class="mt-3">
+
+Madal
+
+</h5>
+
+</div>
+
+</div>
+
+
+
+<div class="col-lg-2 col-md-4 col-6">
+
+<div class="instrument">
+
+<i class="bi bi-keyboard"></i>
+
+<h5 class="mt-3">
+
+Keyboard
+
+</h5>
+
+</div>
+
+</div>
+
+
+
+<div class="col-lg-2 col-md-4 col-6">
+
+<div class="instrument">
+
+<i class="bi bi-disc"></i>
+
+<h5 class="mt-3">
+
+Octapad
+
+</h5>
+
+</div>
+
+</div>
+
+
+
+<div class="col-lg-2 col-md-4 col-6">
+
+<div class="instrument">
+
+<i class="bi bi-music-note-beamed"></i>
+
+<h5 class="mt-3">
+
+Flute
+
+</h5>
+
+</div>
+
+</div>
+
+
+
+<div class="col-lg-2 col-md-4 col-6">
+
+<div class="instrument">
+
+<i class="bi bi-music-note-list"></i>
+
+<h5 class="mt-3">
+
+Harmonium
+
+</h5>
+
+</div>
+
+</div>
+
+
+
+<div class="col-lg-2 col-md-4 col-6">
+
+<div class="instrument">
+
+<i class="bi bi-soundwave"></i>
+
+<h5 class="mt-3">
+
+Dholak
+
+</h5>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= WHY LEARN ================= -->
+
+<section>
+
+<div class="container">
+
+
+<div class="row align-items-center g-5">
+
+
+<div class="col-lg-6">
+
+<h2 class="section-title">
+
+Why Learn With Me?
+
+</h2>
+
+
+<p>
+
+Learning music requires practice,
+guidance and the right approach.
+
+</p>
+
+
+<div class="feature-box">
+
+<i class="bi bi-check-circle-fill"></i>
+
+Easy and practical learning method
+
+</div>
+
+
+<div class="feature-box">
+
+<i class="bi bi-check-circle-fill"></i>
+
+Focus on real performance skills
+
+</div>
+
+
+<div class="feature-box">
+
+<i class="bi bi-check-circle-fill"></i>
+
+Personal music career guidance
+
+</div>
+
+
+<div class="feature-box">
+
+<i class="bi bi-check-circle-fill"></i>
+
+Learn from anywhere online
+
+</div>
+
+
+</div>
+
+
+
+<div class="col-lg-6">
+
+<div class="profile-card">
+
+<div class="profile-icon">
+
+<i class="bi bi-music-note-beamed"></i>
+
+</div>
+
+
+<h3 class="mt-4">
+
+Your Music Journey Starts Here
+
+</h3>
+
+
+<p>
+
+Start learning today and improve your
+skills step by step.
+
+</p>
+
+
+<a
+
+href="#contact"
+
+class="btn btn-main">
+
+Start Your Journey
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+
+<h2>
+
+Ready To Start Your Music Journey? 🎵
+
+</h2>
+
+
+<p class="lead">
+
+Don't wait for the perfect moment.
+Start learning music today.
+
+</p>
+
+
+<div class="mt-4">
+
+<a
+
+href="tel:9867065496"
+
+class="btn me-2">
+
+<i class="bi bi-telephone"></i>
+
+Call Me
+
+</a>
+
+
+<a
+
+href="mailto:opendra.magar35@gmail.com"
+
+class="btn">
+
+<i class="bi bi-envelope"></i>
+
+Send Email
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= PROCESS ================= -->
+
+<section>
+
+<div class="container">
+
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+How It Works
+
+</h2>
+
+
+<p class="section-subtitle">
+
+Simple steps to begin your musical journey.
+
+</p>
+
+</div>
+
+
+<div class="row">
+
+
+<div class="col-md-3">
+
+<div class="step">
+
+<div class="step-number">
+
+1
+
+</div>
+
+<h5>
+
+Contact Me
+
+</h5>
+
+<p>
+
+Call or send a message.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-3">
+
+<div class="step">
+
+<div class="step-number">
+
+2
+
+</div>
+
+<h5>
+
+Choose Instrument
+
+</h5>
+
+<p>
+
+Select what you want to learn.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-3">
+
+<div class="step">
+
+<div class="step-number">
+
+3
+
+</div>
+
+<h5>
+
+Start Learning
+
+</h5>
+
+<p>
+
+Join practical online classes.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-3">
+
+<div class="step">
+
+<div class="step-number">
+
+4
+
+</div>
+
+<h5>
+
+Grow Your Career
+
+</h5>
+
+<p>
+
+Improve and build your future.
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= TESTIMONIAL ================= -->
+
+<section class="about">
+
+<div class="container">
+
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+What Students Say
+
+</h2>
+
+</div>
+
+
+<div class="row g-4">
+
+
+<div class="col-md-4">
+
+<div class="testimonial">
+
+<div class="stars">
+
+★★★★★
+
+</div>
+
+<p>
+
+"Easy to understand lessons and
+very helpful guidance."
+
+</p>
+
+<strong>
+
+Music Student
+
+</strong>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="testimonial">
+
+<div class="stars">
+
+★★★★★
+
+</div>
+
+<p>
+
+"I learned practical techniques that
+helped improve my performance."
+
+</p>
+
+<strong>
+
+Online Student
+
+</strong>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="testimonial">
+
+<div class="stars">
+
+★★★★★
+
+</div>
+
+<p>
+
+"Great support for musicians who
+want to build their career."
+
+</p>
+
+<strong>
+
+Musician
+
+</strong>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FAQ ================= -->
+
+<section>
+
+<div class="container">
+
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Frequently Asked Questions
+
+</h2>
+
+</div>
+
+
+<div class="accordion" id="faq">
+
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button
+
+class="accordion-button"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#faq1">
+
+What instruments can I learn?
+
+</button>
+
+</h2>
+
+
+<div
+
+id="faq1"
+
+class="accordion-collapse collapse show">
+
+<div class="accordion-body">
+
+You can learn Madal, Keyboard,
+Octapad, Flute, Harmonium and Dholak.
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button
+
+class="accordion-button collapsed"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#faq2">
+
+Are classes online?
+
+</button>
+
+</h2>
+
+
+<div
+
+id="faq2"
+
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+Yes. Online classes can be arranged
+for students who want to learn remotely.
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button
+
+class="accordion-button collapsed"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#faq3">
+
+Can beginners join?
+
+</button>
+
+</h2>
+
+
+<div
+
+id="faq3"
+
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+Yes. Beginners can start with
+basic lessons and gradually improve.
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FINAL CTA ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+
+<h2>
+
+Become The Musician You Dream Of 🎶
+
+</h2>
+
+
+<p class="lead">
+
+Take the first step today.
+Your musical future starts with one decision.
+
+</p>
+
+
+<a
+
+href="#contact"
+
+class="btn">
+
+Start Learning Now
+
+<i class="bi bi-arrow-right"></i>
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section
+
+id="contact"
+
+class="contact">
+
+
+<div class="container">
+
+
+<div class="text-center mb-5">
+
+<h2>
+
+Contact Me
+
+</h2>
+
+
+<p>
+
+Let's talk about your musical journey.
+
+</p>
+
+</div>
+
+
+<div class="row g-4">
+
+
+<div class="col-md-4">
+
+<div class="contact-box text-center">
+
+<i class="bi bi-telephone-fill"></i>
+
+<h5 class="mt-3">
+
+Phone
+
+</h5>
+
+
+<a href="tel:9867065496">
+
++977 9867065496
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="contact-box text-center">
+
+<i class="bi bi-envelope-fill"></i>
+
+<h5 class="mt-3">
+
+Email
+
+</h5>
+
+
+<a
+
+href="mailto:opendra.magar35@gmail.com">
+
+opendra.magar35@gmail.com
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="contact-box text-center">
+
+<i class="bi bi-facebook"></i>
+
+<h5 class="mt-3">
+
+Facebook
+
+</h5>
+
+
+<a
+
+href="https://www.facebook.com/opendraBudhaSangam"
+
+target="_blank">
+
+Opendra Budha Sangam
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="text-center mt-5">
+
+<a
+
+href="tel:9867065496"
+
+class="btn btn-main me-2">
+
+<i class="bi bi-telephone"></i>
+
+Call Now
+
+</a>
+
+
+<a
+
+href="mailto:opendra.magar35@gmail.com"
+
+class="btn btn-outline-light">
+
+<i class="bi bi-envelope"></i>
+
+Send Message
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+
+<h5>
+
+🎵 Opendra Budha Magar
+
+</h5>
+
+
+<p>
+
+Lok Dohori Musician From Nepal 🇳🇵
+
+</p>
+
+
+<hr>
+
+
+<p>
+
+© <span id="year"></span>
+
+Opendra Budha Magar.
+
+All Rights Reserved.
+
+</p>
+
+
+</div>
+
+</footer>
+
+
+
+<!-- BACK TO TOP -->
+
+<button id="backToTop">
+
+<i class="bi bi-arrow-up"></i>
+
+</button>
+
+
+
+<!-- Bootstrap JS -->
+
+<script
+
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+
+</script>
+
+
+
+<!-- CUSTOM JAVASCRIPT -->
+
+<script>
+
+/* Current Year */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+
+/* Back To Top Button */
+
+const backToTop =
+document.getElementById("backToTop");
+
+
+window.addEventListener("scroll", function(){
+
+if(window.scrollY > 400){
+
+backToTop.style.display = "block";
+
+}
+
+else{
+
+backToTop.style.display = "none";
+
+}
+
+});
+
+
+backToTop.addEventListener("click", function(){
+
+window.scrollTo({
+
+top: 0,
+
+behavior: "smooth"
+
+});
+
+});
+
+
+/* Close Mobile Menu */
+
+document.querySelectorAll(".nav-link")
+
+.forEach(function(link){
+
+link.addEventListener("click", function(){
+
+const menu =
+document.querySelector(".navbar-collapse");
+
+
+if(menu.classList.contains("show")){
+
+bootstrap.Collapse
+
+.getOrCreateInstance(menu)
+
+.hide();
+
+}
+
+});
+
+});
+
+</script>
+
+
+</body>
+
+</html>
+```
